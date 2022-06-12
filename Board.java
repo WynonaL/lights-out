@@ -14,8 +14,6 @@ public class Board {
 	 * @param moves the number of moves to make when generating the board.
 	 */
 	public Board(int moves) {
-		//throw new RuntimeException("Not implemented");
-		//maybe keep track of the moves?
 		N = 0;
 		board = new boolean[5][5];
 		Random rand = new Random();
@@ -42,8 +40,6 @@ public class Board {
 	 * false indicates the position starts cleared.
 	 */
 	public Board(boolean[][] b) {
-		//throw new RuntimeException("Not implemented");
-		//update N
 		board = new boolean[5][5];
 
 		for(int i = 0; i < b.length; i++) {
@@ -140,7 +136,6 @@ public class Board {
 	 * @return {@code true} if the cell is filled and {@code false} otherwise.
 	 */
 	public boolean isFilled(int row, int col) {
-		//throw new RuntimeException("Not implemented");
 		return board[row][col];
 	}
 

@@ -90,8 +90,7 @@ public class Solver {
 
 		// Lets just assume the graph and all the hashmaps have correctly been updated
 		// Now backtrack to the answer using edgeTo
-		if(edgeTo.containsKey(solution)){ //means that there is a solution
-			//just set pathToStart to anything other than the solution so the while loop can proceed
+		if(edgeTo.containsKey(solution)){ 
 			answerCoords.add(edgeName.get(solution));
 			//solution is a empty board
 			while(solution != start) {
