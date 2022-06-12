@@ -9,11 +9,7 @@ public class Solver {
 
 
 	/**
-	 * Construct a solver object.  How much work this constructor does is completely up to you.
-	 * It is here in case you want to initialize some fields or do some pre-processing before
-	 * being asked to solve a specific puzzle.  This constructor will be called once to construct
-	 * your Solver object and then the solve method will be called multiple times on that
-	 * Solver object.
+	 * Constructs a solver object.
 	 */
 	public Solver() {
 		//run bfs  here on a empty or full graph 
@@ -34,7 +30,7 @@ public class Solver {
 	 * is no solution to the given input board.
 	 */
 	 int[] solve(boolean[][] b) {
-		//change so all you do backtrack to you solution here
+		
 		HashMap<Board, Board> edgeTo = new HashMap<Board, Board>();
 		HashMap<Board, Boolean> marked = new HashMap<Board, Boolean>();
 		HashMap<Board, String> edgeName = new HashMap<Board, String>();
